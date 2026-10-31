@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Ocean wave logo">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06172A"/>
+      <stop offset="0.55" stop-color="#0A2C46"/>
+      <stop offset="1" stop-color="#0B3D57"/>
+    </linearGradient>
+
+    <linearGradient id="waveBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15597D"/>
+      <stop offset="1" stop-color="#0E4260"/>
+    </linearGradient>
+
+    <linearGradient id="waveMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C8BAA"/>
+      <stop offset="1" stop-color="#146880"/>
+    </linearGradient>
+
+    <linearGradient id="waveFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#47D2E4"/>
+      <stop offset="1" stop-color="#1FA6C2"/>
+    </linearGradient>
+
+    <radialGradient id="moonGlow">
+      <stop offset="0.45" stop-color="#7FD8FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7FD8FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="disc">
+      <circle cx="256" cy="256" r="256"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#disc)">
+    <!-- night ocean background -->
+    <circle cx="256" cy="256" r="256" fill="url(#sky)"/>
+
+    <!-- moon + glow -->
+    <circle cx="352" cy="150" r="96" fill="url(#moonGlow)"/>
+    <circle cx="352" cy="150" r="44" fill="#D9F4FF"/>
+
+    <!-- waves, back to front -->
+    <path fill="url(#waveBack)" d="M -200,280
+      C -140,240 -80,240 -20,280
+      C 40,320 100,320 160,280
+      C 220,240 280,240 340,280
+      C 400,320 460,320 520,280
+      C 580,240 640,240 700,280
+      L 700,600 L -200,600 Z"/>
+
+    <path fill="url(#waveMid)" d="M -200,350
+      C -140,384 -80,384 -20,350
+      C 40,316 100,316 160,350
+      C 220,384 280,384 340,350
+      C 400,316 460,316 520,350
+      C 580,384 640,384 700,350
+      L 700,600 L -200,600 Z"/>
+
+    <path fill="url(#waveFront)" d="M -200,420
+      C -140,380 -80,380 -20,420
+      C 40,460 100,460 160,420
+      C 220,380 280,380 340,420
+      C 400,460 460,460 520,420
+      C 580,380 640,380 700,420
+      L 700,600 L -200,600 Z"/>
+  </g>
+
+  <!-- subtle rim for light backgrounds -->
+  <circle cx="256" cy="256" r="252" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="8"/>
+</svg>
