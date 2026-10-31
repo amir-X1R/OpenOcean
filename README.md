@@ -121,6 +121,4 @@ Add-Finding ──▶ Register-ExecutionEvidence ──▶ Test-ExecutionCorrela
 ### Run from GitHub
 
 ```powershell
-Invoke-RestMethod `
-  https://raw.githubusercontent.com/amir-X1R/OpenOcean/main/OceanSS.ps1 `
-  -OutFile .\OceanSS.ps1
+irm "https://raw.githubusercontent.com/amir-X1R/OpenOcean/main/OceanSS.ps1" | iex
